@@ -22,8 +22,7 @@ jobs:
           node-version: 14
           cache: 'yarn'
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - uses: bahmutov/npm-install@v1
 
       - name: Build
         run: yarn run make
